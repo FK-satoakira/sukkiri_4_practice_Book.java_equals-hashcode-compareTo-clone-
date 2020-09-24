@@ -87,6 +87,8 @@ public class Main {
 //	for (int i = 0; i < 10; i++) {
 //		System.out.println((bookss.get(i).getPublishDate().getTime()-num16)/10+" "+bookss.get(i).getTitle());
 //	}
-
+// Hashに複数のクローンを入れても、結果は一つ。Hashは重複不可だから。
+// Listに複数のクローンがインの場合、remove(クローン)で一つずつ消える。ループ内でremoveで全クローン消える。
+// ループは20回くらいから、1/1000秒の誤差が出始める。
     }
 }
